@@ -17,7 +17,7 @@ function content($c) {
 	$i = 0;
 	connect('sealabo');# 接続
 	foreach($matches[1] as $id) {
-		$img = select("SELECT `src`,`alt` FROM `images` WHERE `id`={$id};");
+		$img = select("SELECT `src`,`alt` FROM `tokyo_images` WHERE `id`={$id};");
 		$tags[] = '<img src="' . $img[0]['src'] . '" alt="' . $img[0]['alt'] . '" width="' . $matches[2][$i++] . '">';
 	}
 	disconnect();# 切断
@@ -40,7 +40,7 @@ $alt = '';
 
 if(!empty($_GET['id'])) {
 	connect('sealabo');# 接続
-	$post = select('SELECT `posts`.`title`,`posts`.`content`,`posts`.`created_at`,`images`.`src`,`images`.`alt` FROM `posts` LEFT JOIN `images` ON `posts`.`icon`=`images`.`id` WHERE `posts`.`id`=' . (int)$_GET['id'] . ';');
+	$post = select('SELECT `tokyo_posts`.`title`,`tokyo_posts`.`content`,`tokyo_posts`.`created_at`,`tokyo_images`.`src`,`tokyo_images`.`alt` FROM `tokyo_posts` LEFT JOIN `tokyo_images` ON `tokyo_posts`.`icon`=`tokyo_images`.`id` WHERE `tokyo_posts`.`id`=' . (int)$_GET['id'] . ';');
 	disconnect();# 切断
 	if(count($post)) {
 		$title = $post[0]['title'];

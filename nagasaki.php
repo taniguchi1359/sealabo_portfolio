@@ -18,16 +18,16 @@ connect("sealabo");
 $getY = empty($_GET['y']) ? 0 : (int)$_GET['y'];
 $getM = empty($_GET['m']) ? 0 : (int)$_GET['m'];
 $getD = empty($_GET['d']) ? 0 : (int)$_GET['d'];
-$y = $getY ? ' YEAR(`tokyo_posts`.`created_at`)=' . $getY : '';
-$m = $getM ? ($y != '' ? ' AND' : '') . ' MONTH(`tokyo_posts`.`created_at`)=' . $getM : '';
-$d = $getD ? ($m != '' ? ' AND' : '') . ' DATE(`tokyo_posts`.`created_at`)=' . $getD : '';
+$y = $getY ? ' YEAR(`posts`.`created_at`)=' . $getY : '';
+$m = $getM ? ($y != '' ? ' AND' : '') . ' MONTH(`posts`.`created_at`)=' . $getM : '';
+$d = $getD ? ($m != '' ? ' AND' : '') . ' DATE(`posts`.`created_at`)=' . $getD : '';
 
 #右の条件かつ左の条件→&&
-#$d = $getD ? ($y != '' && $m != '' ? ' AND' : '') . ' DATE(`tokyo_posts`.`created_at`)=' . $getD : '';
+#$d = $getD ? ($y != '' && $m != '' ? ' AND' : '') . ' DATE(`posts`.`created_at`)=' . $getD : '';
 
 $where = $y != '' ? ' WHERE' . $y . $m . $d : '';
-$posts = select('SELECT `tokyo_posts`.`id`,`tokyo_posts`.`title`,`tokyo_posts`.`created_at`,`tokyo_posts`.`content`,`tokyo_images`.`src`,`tokyo_images`.`alt` FROM `tokyo_posts` LEFT JOIN `tokyo_images` ON `tokyo_posts`.`icon`=`tokyo_images`.`id`' . $where . ' ORDER BY `tokyo_posts`.`id` DESC LIMIT ' . $ARTICLE_PER_PAGE . ' OFFSET ' . $offset . ';');
-#$posts = select('SELECT `tokyo_posts`.`id`,`tokyo_posts`.`title`,`tokyo_posts`.`created_at`,IF(CHAR_LENGTH(`content`)>20,	CONCAT(LEFT(`content`,20), '...'),`content`),`tokyo_images`.`src`,`tokyo_images`.`alt` FROM `tokyo_posts` LEFT JOIN `tokyo_images` ON `tokyo_posts`.`icon`=`tokyo_images`.`id`' . $where . ' ORDER BY `tokyo_posts`.`id` DESC LIMIT ' . $ARTICLE_PER_PAGE . ' OFFSET ' . $offset . ';');
+$posts = select('SELECT `posts`.`id`,`posts`.`title`,`posts`.`created_at`,`posts`.`content`,`images`.`src`,`images`.`alt` FROM `posts` LEFT JOIN `images` ON `posts`.`icon`=`images`.`id`' . $where . ' ORDER BY `posts`.`id` DESC LIMIT ' . $ARTICLE_PER_PAGE . ' OFFSET ' . $offset . ';');
+#$posts = select('SELECT `posts`.`id`,`posts`.`title`,`posts`.`created_at`,IF(CHAR_LENGTH(`content`)>20,	CONCAT(LEFT(`content`,20), '...'),`content`),`images`.`src`,`images`.`alt` FROM `posts` LEFT JOIN `images` ON `posts`.`icon`=`images`.`id`' . $where . ' ORDER BY `posts`.`id` DESC LIMIT ' . $ARTICLE_PER_PAGE . ' OFFSET ' . $offset . ';');
 
 # 何ページから何ページまで 
 # LIMIT ' . $ARTICLE_PER_PAGE . ' OFFSET ' . $offset . 
@@ -42,24 +42,24 @@ $変数 = <<<終了の文字列
 終了の文字列;
 ?>
 
-$sql_select_tokyo_posts = <<<AIUEO
-SELECT `tokyo_posts`.`id`
-  ,`tokyo_posts`.`title`
-  ,`tokyo_posts`.`created_at`
-  ,`tokyo_images`.`src`
-  ,`tokyo_images`.`alt` 
-FROM `tokyo_posts` 
-LEFT JOIN `tokyo_images` 
-ON `tokyo_posts`.`icon`=`tokyo_images`.`id`
+$sql_select_posts = <<<AIUEO
+SELECT `posts`.`id`
+  ,`posts`.`title`
+  ,`posts`.`created_at`
+  ,`images`.`src`
+  ,`images`.`alt` 
+FROM `posts` 
+LEFT JOIN `images` 
+ON `posts`.`icon`=`images`.`id`
 $where 
-ORDER BY `tokyo_posts`.`id` DESC 
+ORDER BY `posts`.`id` DESC 
 LIMIT $ARTICLE_PER_PAGE OFFSET $offset;
 AIUEO;
 
 $posts = select($sql_select_posts);
 */
 
-$ym = select('SELECT `tokyo_posts`.`created_at` FROM `tokyo_posts` LEFT JOIN `tokyo_images` ON `tokyo_posts`.`icon`=`tokyo_images`.`id`;');
+$ym = select('SELECT `posts`.`created_at` FROM `posts` LEFT JOIN `images` ON `posts`.`icon`=`images`.`id`;');
 $html = '';
 $py = 0;
 $pm = 0;
@@ -73,12 +73,12 @@ $pm = 0;
 # Y-m-d -> 2021-12-19
 # Y/m/d -> 2021/12/19
 # Y/m/d H:i:s -> 2021/12/19 09:04:00
-foreach($posts as $post) $html .= '<article><a href="tokyo_article.php?id=' . $post['id'] . '"><img src="' . ($post['src'] ?? 'images/blogimage.jpg') . '"alt="' . ($post['alt'] ?? '') . '" class="icon"><div class="dd"><div class="date">' . timestamptoymd($post['created_at']) . '</div><div class="title">' . h($post['title']) . '</div><div class="text">' . strcut($post['content'], 20, '...') . '</div></div></a></article>';
+foreach($posts as $post) $html .= '<article><a href="article.php?id=' . $post['id'] . '"><img src="' . ($post['src'] ?? 'images/blogimage.jpg') . '"alt="' . ($post['alt'] ?? '') . '" class="icon"><div class="dd"><div class="date">' . timestamptoymd($post['created_at']) . '</div><div class="title">' . h($post['title']) . '</div><div class="text">' . strcut($post['content'], 20, '...') . '</div></div></a></article>';
 #foreach($posts as $post) $html .= '<article><a href="article.php?id=' . $post['id'] . '"><img src="' . ($post['src'] ?? 'images/blogimage.jpg') . '"alt="' . ($post['alt'] ?? '') . '" class="icon"><div class="dd"><div class="date">' . $where. '</div><div class="title">' . htmlspecialchars($post['title'], ENT_QUOTES) . '</div><div class="text">' . $substr_content . '</div></div></a></article>';
 #($post['src'] ?? 'images/blogimage.jpg') → ?? →srcが入ってなかったらimages/blogimage.jpgを表示
 
 #ページ送り
-$pageCount = ceil(select('SELECT COUNT(1) AS c FROM `tokyo_posts` LEFT JOIN `tokyo_images` ON `tokyo_posts`.`icon`=`tokyo_images`.`id`' . $where . ';')[0]['c'] / 4);
+$pageCount = ceil(select('SELECT COUNT(1) AS c FROM `posts` LEFT JOIN `images` ON `posts`.`icon`=`images`.`id`' . $where . ';')[0]['c'] / 4);
 $link->close();# 切断
 
 $query = '';
@@ -143,11 +143,11 @@ if($pageCount < 6) {
 <!--ページタイトル-->
 <div id ="header">
 	<img src="images/seatop.png" alt="">
-	<div id="slogan"><h1>TOKYO</h1></div>
+	<div id="slogan"><h1>NAGASAKI</h1></div>
 </div>
 <!--/ページタイトル-->
 
-<!--取り組み一覧（繰り返し10件程度_flexbox_html14章）-->
+<!--取り組み一覧-->
 <div><?php echo $html; ?></div>
 <!--/取り組み一覧-->
 

@@ -24,7 +24,9 @@ body{
 }
 
 #haikei{
-	background: url(images/haikei.png) repeat-y center;
+	width:1280px;
+	margin:0 auto;
+	background: url(images/haikei.png) repeat-y center top;
 }
 
 a{
@@ -69,9 +71,9 @@ a:active, a:focus,input:active, input:focus{outline:0;}
 
 #slogan h1{
 	font-size: 40px;
-	font-family: 'Pacifico', cursive;
 	margin-bottom: 20px;
 	font-weight:normal;
+/*	font-family: 'Pacifico', cursive;*/
 }
 
 #slogan h2{
@@ -107,6 +109,80 @@ section h2{
 	font-size: 22px;
 	font-weight:normal;
 	text-align: center;
+	background: #fff;
+	padding: 0;
+	margin: 0;
+}
+
+.message{
+	width: 40%;
+	margin: 0 auto;
+/*	padding-bottom: 80px;*/
+}
+
+
+/* float */
+.left{
+	float: left;
+}
+
+.right{
+	float: right;
+}
+
+.clearfix{
+	zoom: 1;
+}
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.cb{
+	clear: both;
+}
+
+
+/* BUSINESS
+------------------------------------------------------------*/
+.sec h2::first-letter{
+	color:#5994e2;
+	margin-right:0.5em;
+	font-size:200%;
+	font-style:oblique;
+	font-family:'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
+}
+
+
+/* CAREER
+------------------------------------------------------------*/
+
+#CAREER{
+	margin:30px 0 50px 0;
+}
+
+
+section#CAREER h2{
+	padding: 30px 0 0 0;
+}
+
+.aaa h2{
+	color:#5994e2;
+	font-size:200%;
+	font-style:oblique;
+	font-weight:bold;
+}
+
+.foge{
+	width:500px;
+}
+
+
+/* PROFILE
+------------------------------------------------------------*/
+#PROFILE{
+	padding-top: 10px;
 }
 
 .inner{
@@ -118,77 +194,22 @@ section h2{
 .col2 li{
 	display: inline-block;
 	width: 100%;
-  	margin: 20px 0 20px 0;
+	margin: 20px 0 20px 0;
 }
 
-/* SEC01 MESSAGE
-------------------------------------------------------------*/
-
-.message{
-	width: 60%;
-	margin: 0 auto;
-	padding-bottom: 80px;
+#iconsize{
+	display: inline-block;
+	width: 230px;
+	margin: 20px 0 20px 100px;
+	
 }
 
-/* SEC02 SEA NIU TOKYO
-------------------------------------------------------------*/
-
-.wrap{
-	clear: both;
-	width: 100%;
-	background: #f6f6f6;
-}
-
-.bg{
-	line-height: 0;
-}
-
-.txt h2{
-	padding: 0 0 20px !important;
-}
-
-section#sec05 h2{
-	padding: 30px 0 0 0;
-}
-
-.col3{
-	padding: 0px;
+#sns img{
+	width:40px;
 }
 
 
-.col3 li{
-	margin-bottom: 50px;
-}
-
-.col3 img{
-	max-width: 288px;
-	display: block;
-	margin: -5px auto 20px;
-}
-
-/* SEC06 PROFILE
-------------------------------------------------------------*/
-#sec06{
-	padding-top: 10px;
-}
-
-#facebook{
-	position: relative;
-	padding-bottom: 75%;
-	height: 0;
-	overflow: hidden;
-}
-
-#facebook iframe{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100% !important;
-	height: 100% !important;
-	border: 0;
-}
-
-/* SEA.php
+/* tokyo.php/nagasaki.php
 ------------------------------------------------------------*/
 
 /*記事欄*/
@@ -276,9 +297,9 @@ article{
 
 #slogan h1{
 	font-size: 40px;
-	font-family: 'Pacifico', cursive;
 	margin-bottom: 20px;
 	font-weight:normal;
+/*	font-family: 'Pacifico', cursive;*/
 }
 
 #slogan h2{
@@ -308,23 +329,6 @@ article{
 	clear: left;
 }
 
-/* float */
-.left{
-	float: left;
-}
-
-.right{
-	float: right;
-}
-
-.clearfix{
-	zoom: 1;
-}
-.clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
-}
 
 /* RESPONSIVE 設定
 ------------------------------------------------------------*/
@@ -332,7 +336,7 @@ article{
 @media only screen and (min-width: 1200px){
 	.inner{
 		width: 1024px;
-/*		padding-bottom: 120px;*/
+		/*padding-bottom: 120px;*/
 	}
 	section h2{
 		padding: 70px 0 20px;
@@ -387,8 +391,22 @@ article{
 		padding: 20px 10px;
 	}
 
-	/* SEC02 MESSAGE
+
+	/* SEC02 BUSINESS～CAREEA（ページ幅作成中）
 	-----------------*/
+
+	#haikei message{
+		display: inline-block;
+		width: 30%;
+		padding: 0 1.5%;
+		margin-bottom: 0;
+		vertical-align: top;
+		text-align: left;
+	}
+
+
+	/* SEC02 MESSAGE
+	-----------------
 	.txt, .bg{
 		width: 50%;
 		float: left;
@@ -407,7 +425,7 @@ article{
 	}
 	
 	/* SEC02 SEA NIU TOKYO
-	-----------------*/
+	-----------------
 	.col3{
 		text-align: center;
 	}
@@ -422,11 +440,11 @@ article{
 	}
 	
 	/* SEC05 PROFILE
-	-----------------*/
-/*	#sec05{
+	-----------------
+	#sec05{
 		padding-top: 120px;
 	}
-*/
+	*/
 	
   #footer{
 		padding: 30px 10px 70px 0;
@@ -574,7 +592,7 @@ article{
 	section h2{
 		padding: 50px 0 20px 0;
 	}
-	#sec01 h2{
+	#WE h2{
 		padding: 70px 0 20px;
 	}
 	.vMid{

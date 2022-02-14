@@ -17,11 +17,12 @@
 	<div class="panel">
 		<ul>
 			<li><a href="#header">TOP</a></li>
-			<li><a href="#sec01">WE</a></li>
-			<li><a href="#sec02">BUSINESS</a></li>
-			<li><a href="#sec03">CAREER</a></li>
-			<li><a href="#sec05">BLOG</a></li>
-			<li><a href="#sec05">FACEBOOK</a></li>
+			<li><a href="#WE">WE</a></li>
+			<li><a href="#BUSINESS">BUSINESS</a></li>
+			<li><a href="#CAREER">CAREER</a></li>
+			<li><a href="https://ameblo.jp/gentekko/" target="_blank">BLOG</a></li>
+			<li><a href="https://www.facebook.com/gentekko" target="_blank">FACEBOOK</a></li>
+			<li><a href="mailto:gentekko&#64;gmail.com">MAIL</a></li>
 		</ul>
 	</div>
 </nav>
@@ -29,18 +30,18 @@
 <header id="header">
 	<img src="images/hachinoco.jpg" alt="">
 	<div id="slogan">
-		<h1>HACHINOCO SEA LABORATORY</h1>
+		<h1>HACHINOCO&ensp;SEA&ensp;LABORATORY</h1>
 	</div>
 </header>
 
 <!-- 目的 -->
-<section id="sec01">
+<section id="WE">
 	<header>
-		<h2>長崎の土地を活かしたまちづくりのために</h2>
+		<h2>地域特性を活かしたまちづくりのために</h2>
 	</header>
 	<div class="message">
-		”HACHINOCO SEA LABORATORY”は長崎のまちづくり事業を推進するために
-		観光（Seeing）、環境（Environment）建築（Architecture）の視点や
+		”HACHINOCO&ensp;<b><font color="red">SEA</font></b>&ensp;LABORATORY”はまちづくり事業を推進するために
+		観光（<b><font color="red">S</font></b>eeing）、環境（<b><font color="red">E</font></b>nvironment）建築（<b><font color="red">A</font></b>rchitecture）の視点や
 		地方の里山、里海の恵みによる暮らしを考えた（SDGs）、プロジェクトの企画やアドバイザー業務を行っています。
 		<!--多様化の時代にあって、従来の都市計画や建築設計の延長では解決できない多くの問題を含んでいます。 新築・保存・再生・復元の循環型潮流の中で土地の持っている力を検証する事は、具体的な解決策を見いだす一つの方法です。 検証の方法としては土地の力を科学的な手法と従来の経済価値とは違った、もう一つの価値観「暮らしの質」・「審美的な質」を 物差しとして創造するときに違う形が生まれてきます。 暮らしの質が観光資源となり、経済基盤となります。 持続する社会の実現に向けて新たな価値基準を創造しながら「まちづくり」から建築設計を行う必要性が求められています。 これらニーズに対応するには、ソフト面（地域学・利用技術・マーケッティング）を重視した都市づくりや事業計画が必要となります。-->
 	</div>
@@ -50,94 +51,100 @@
 <div id="haikei">
 
 <!-- 事業内容 -->
-<section id="sec01">
+<section id="BUSINESS" class ="clearfix">
 	<header>
 		<h2>主な事業</h2>
 	</header>
-	<div class="message">
-		<h2>１．建設設計</h2>
-		１．展望公園　琴平公園基本設計　長崎県西海市西海町　令和2年
-		<br>２．建築設計　有吉邸別荘基本設計　福岡県若宮市　令和2年
-		<br>３．設計DIY　住宅、海上美術館設計・施工　長崎県西海市西海町　令和3年
+	<div class="message sec left">
+		<h2>1建設設計</h2>
+		１．展望公園　琴平公園基本設計　長崎県西海市西海町
+		<br>２．建築設計　有吉邸別荘基本設計　福岡県若宮市
+		<br>３．設計DIY　住宅、海上美術館設計・施工　長崎県西海市西海町
 	</div>
-	<div class="message">
-		<h2>2．各種委員会</h2>
+	<div class="message sec right">
+		<h2>2各種委員会</h2>
 		１．独立行政法人高齢・障害・求職者雇用支援機構
-		<br>長崎県運営協議会佐世保訓練センター部会(座長)
-		<br>２．長崎県庁　
-		<br>①長崎県美しい景観形成審議会(委員)
-		<br>３．佐世保市役所　
-		<br>①佐世保市景観審議会(委員長)、②黒島文化的景観保護推進委員会(副委員長)
+		<br>　　長崎県運営協議会佐世保訓練センター部会(座長)
+		<br>２．長崎県庁
+		<br>　　①長崎県美しい景観形成審議会(委員)
+		<br>３．佐世保市役所
+		<br>　　①佐世保市景観審議会(委員長)、②黒島文化的景観保護推進委員会(副委員長)
 	</div>
-	<div class="message">
-		<h2>3．その他</h2>
-		１．大学共同発掘調査・西海町横瀬浦　令和2年から令和3年
-		<br>２．演劇・横瀬浦物語　背景画制作　令和4年
-		<br>３．海上イカダのプロデュース、大学生CafeＵＭＩＮＯＵＥ　令和3年12月
-		<br>４．大学非常勤講師　令和2年、令和3年度迄
+	<div class="message sec left">
+
+		<h2>3その他</h2>
+		１．大学共同発掘調査・西海町横瀬浦
+		<br>２．演劇・横瀬浦物語　背景画制作
+		<br>３．海上イカダのプロデュース、大学生CafeＵＭＩＮＯＵＥ
+		<br>４．大学非常勤講師
 	</div>
-	<div class="message">
-		<h2>４.著作</h2>
-		１．「横瀬浦天主堂」　執筆中　
+	<div class="message sec right">
+		<h2>４著作</h2>
+		<a href="document/saikai.pdf" target="_blank">１．西海のオアシス（PDF）</a>
+		<br><a href="document/mobius.pdf" target="_blank">２．メビウス航路（PDF）</a>
 	</div>
 </section>
 <!-- /事業内容 -->
 
-<section id="sec01">
-<header>
-	<h2>過去の取り組み</h2>
-</header>
-</section>
+<!-- 過去の取り組み -->
+<section id="CAREER" class ="clearfix">
+	<header>
+		<h2>今までの取り組み</h2>
+	</header>
 
-<!-- SEA -->
-<section id="sec02">
-	<div class="wrap">
-	<a href="sea.php" target="_blank">
-		<p class="bg"><img src="images/sea.png" alt=""></p>
-		<div class="txt">
-			<div class="vMid">
-				<h2>NIU</h2>
-				<p>大学時代の説明</p>
-			</div>
-		</div>
-	</a>
-	</div>
-</section>
-<!-- /SEA -->
+<!-- clearfix -->
+<section class="clearfix">
 
 <!-- NIU -->
-<section id="sec03">
-	<div class="wrap">
-	<a href="sea.php" target="_blank">
-		<p class="bg"><img src="images/niu.png" alt=""></p>
-		<div class="txt">
-			<div class="vMid">
-				<h2>TOKYO</h2>
-				<p>東京時代の取り組み</p>
-			</div>
-		</div>
-	</a>
+	<div class="message left aaa">
+		<a href="nagasaki.php" target="_blank">
+			<h2>NAGASAKI時代</h2>
+			<p>建築、都市、まちづくりの知識と経験を大学で教育者として活動した時代です。特に観光まちづくりを教え実践した時代です。</p>
+		</a>
 	</div>
-</section>
 <!-- /NIU -->
+
+<!-- TOKYO -->
+	<div class="message right aaa">
+		<a href="tokyo.php" target="_blank">
+			<h2>TOKYO時代</h2>
+			<p>バブル末期に始まる建築設計、バブル後の地域づくりを経験し、日本中の地域を対象に取り組んだ建築・地域づくりの時代です。</p>
+		</a>
+	</div>
+<!-- /TOKYO -->
+
+</section>
+<!-- /clearfix -->
+
+</section>
+<!-- /過去の取り組み -->
 
 </div>
 <!-- /haikei -->
 
 <!-- PROFILE -->
-<section id="sec06">
+<section id="PROFILE">
 	<div class="inner">
 		<ul class="col2">
-			<li>
+			<li id="iconsize">
 				<img src="images/hara.jpg" alt="" >
 			</li>
 			<li>
-				<font size="5">原　哲弘</font>&emsp;<font size="4">Tetsuhiro Hara</font>&emsp;<font size="4">F、BLOGｱｲｺﾝﾘﾝｸ</font>
-				<br/><font size="4">―地域づくりアドバイザー―</font>
-				<p>1980年　東京理科大学理工学部建築学科卒業<br/>
-				   （有）原哲弘計画工房一級建築士事務所を経て、
-				   1996年から（株）ユニコム企画設計において、地方自治体のまちづくり事業及び建築・ランドスケープ設計を行う。
-				   2008年から長崎国際大学・国際観光学科勤務、2020年定年退職。同年Hachinoco SEA  Laboratory設立。青森県おいらせ町ふるさと大使。</p>
+				<div class="left">
+					<font size="5">原　哲弘</font>&emsp;<font size="4">Tetsuhiro Hara</font>&emsp;
+				</div>
+				<div id="sns">
+					<a href="https://ameblo.jp/gentekko/" target="_blank"><img src="images/blog.png" alt=""></a>
+					<a href="https://www.facebook.com/gentekko" target="_blank"><img src="images/facebook.png" alt=""></a>
+					<a href="mailto:gentekko&#64;gmail.com"><img src="images/mail.png" alt=""></a>
+				</div>
+				<div class="cb">
+					<font size="4">―地域づくりアドバイザー―</font>
+					<p>1980年　東京理科大学理工学部建築学科卒業<br/>
+					   （有）原哲弘計画工房一級建築士事務所を経て、
+					   1996年から（株）ユニコム企画設計において、地方自治体のまちづくり事業及び建築・ランドスケープ設計を行う。
+					   2008年から長崎国際大学・国際観光学科勤務、2020年定年退職。同年Hachinoco SEA  Laboratory設立。青森県おいらせ町ふるさと大使。</p>
+				</div>
 			</li>
 		</ul>
 	</div>
