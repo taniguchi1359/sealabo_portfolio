@@ -128,10 +128,10 @@ if($pageCount < 6) {
 	<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
 	<div class="panel">
 		<ul>
-			<li><a href="#header">TOP</a></li>
-			<li><a href="#WE">WE</a></li>
-			<li><a href="#BUSINESS">BUSINESS</a></li>
-			<li><a href="#CAREER">CAREER</a></li>
+			<li><a href="/#header">TOP</a></li>
+			<li><a href="/#WE">WE</a></li>
+			<li><a href="/#BUSINESS">BUSINESS</a></li>
+			<li><a href="/#CAREER">CAREER</a></li>
 			<li><a href="https://ameblo.jp/gentekko/" target="_blank">BLOG</a></li>
 			<li><a href="https://www.facebook.com/gentekko" target="_blank">FACEBOOK</a></li>
 			<li><a href="mailto:gentekko&#64;gmail.com">MAIL</a></li>

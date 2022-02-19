@@ -39,7 +39,7 @@
 	<header>
 		<h2>地域特性を活かしたまちづくりのために</h2>
 	</header>
-	<div class="message">
+	<div class="message ccc">
 		”HACHINOCO&ensp;<b><font color="red">SEA</font></b>&ensp;LABORATORY”はまちづくり事業を推進するために
 		観光（<b><font color="red">S</font></b>eeing）、環境（<b><font color="red">E</font></b>nvironment）建築（<b><font color="red">A</font></b>rchitecture）の視点や
 		地方の里山、里海の恵みによる暮らしを考えた（SDGs）、プロジェクトの企画やアドバイザー業務を行っています。
@@ -57,31 +57,40 @@
 	</header>
 	<div class="message sec left">
 		<h2>1建設設計</h2>
-		１．展望公園　琴平公園基本設計　長崎県西海市西海町
-		<br>２．建築設計　有吉邸別荘基本設計　福岡県若宮市
-		<br>３．設計DIY　住宅、海上美術館設計・施工　長崎県西海市西海町
+		<div class="bbb">
+			１．展望公園　琴平公園基本設計　長崎県西海市西海町
+			<br>２．建築設計　有吉邸別荘基本設計　福岡県若宮市
+			<br>３．設計DIY　住宅、海上美術館設計・施工　長崎県西海市西海町
+		</div>
 	</div>
 	<div class="message sec right">
 		<h2>2各種委員会</h2>
-		１．独立行政法人高齢・障害・求職者雇用支援機構
-		<br>　　長崎県運営協議会佐世保訓練センター部会(座長)
-		<br>２．長崎県庁
-		<br>　　①長崎県美しい景観形成審議会(委員)
-		<br>３．佐世保市役所
-		<br>　　①佐世保市景観審議会(委員長)、②黒島文化的景観保護推進委員会(副委員長)
+		<div class="bbb">
+			１．独立行政法人高齢・障害・求職者雇用支援機構
+			<br>　　長崎県運営協議会佐世保訓練センター部会(座長)
+			<br>２．長崎県庁
+			<br>　　①長崎県美しい景観形成審議会(委員)
+			<br>３．佐世保市役所
+			<br>　　①佐世保市景観審議会(委員長)
+			<br>　　②黒島文化的景観保護推進委員会(副委員長)
+		</div>
 	</div>
 	<div class="message sec left">
 
 		<h2>3その他</h2>
-		１．大学共同発掘調査・西海町横瀬浦
-		<br>２．演劇・横瀬浦物語　背景画制作
-		<br>３．海上イカダのプロデュース、大学生CafeＵＭＩＮＯＵＥ
-		<br>４．大学非常勤講師
+		<div class="bbb">
+			１．大学共同発掘調査・西海町横瀬浦
+			<br>２．演劇・横瀬浦物語　背景画制作
+			<br>３．海上イカダのプロデュース、大学生CafeＵＭＩＮＯＵＥ
+			<br>４．大学非常勤講師
+		</div>
 	</div>
 	<div class="message sec right">
 		<h2>４著作</h2>
-		<a href="document/saikai.pdf" target="_blank">１．西海のオアシス（PDF）</a>
-		<br><a href="document/mobius.pdf" target="_blank">２．メビウス航路（PDF）</a>
+		<div class="bbb">
+			<a href="document/saikai.pdf" target="_blank">１．西海のオアシス（PDF）</a>
+			<br><a href="document/mobius.pdf" target="_blank">２．メビウス航路（PDF）</a>
+		</div>
 	</div>
 </section>
 <!-- /事業内容 -->
@@ -99,7 +108,7 @@
 	<div class="message left aaa">
 		<a href="nagasaki.php" target="_blank">
 			<h2>NAGASAKI時代</h2>
-			<p>建築、都市、まちづくりの知識と経験を大学で教育者として活動した時代です。特に観光まちづくりを教え実践した時代です。</p>
+			<p class="ccc">建築、都市、まちづくりの知識と経験を大学で教育者として活動した時代です。特に観光まちづくりを教え実践した時代です。</p>
 		</a>
 	</div>
 <!-- /NIU -->
@@ -108,7 +117,7 @@
 	<div class="message right aaa">
 		<a href="tokyo.php" target="_blank">
 			<h2>TOKYO時代</h2>
-			<p>バブル末期に始まる建築設計、バブル後の地域づくりを経験し、日本中の地域を対象に取り組んだ建築・地域づくりの時代です。</p>
+			<p class="ccc">バブル末期に始まる建築設計、バブル後の地域づくりを経験し、日本中の地域を対象に取り組んだ建築・地域づくりの時代です。</p>
 		</a>
 	</div>
 <!-- /TOKYO -->
@@ -138,7 +147,7 @@
 					<a href="https://www.facebook.com/gentekko" target="_blank"><img src="images/facebook.png" alt=""></a>
 					<a href="mailto:gentekko&#64;gmail.com"><img src="images/mail.png" alt=""></a>
 				</div>
-				<div class="cb">
+				<div class="cb ddd">
 					<font size="4">―地域づくりアドバイザー―</font>
 					<p>1980年　東京理科大学理工学部建築学科卒業<br/>
 					   （有）原哲弘計画工房一級建築士事務所を経て、

@@ -154,6 +154,10 @@ section h2{
 	font-family:'Noto Sans JP', Arial, Verdana, 游ゴシック, YuGothic,'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
 }
 
+.bbb{
+	padding-left:50px;
+}
+
 
 /* CAREER
 ------------------------------------------------------------*/
@@ -176,6 +180,10 @@ section#CAREER h2{
 
 .foge{
 	width:500px;
+}
+
+.ccc{
+	padding:0 50px;
 }
 
 
@@ -206,6 +214,10 @@ section#CAREER h2{
 
 #sns img{
 	width:40px;
+}
+
+.ddd{
+	padding:0 20px;
 }
 
 
@@ -391,20 +403,6 @@ article{
 		padding: 20px 10px;
 	}
 
-
-	/* SEC02 BUSINESS～CAREEA（ページ幅作成中）
-	-----------------*/
-
-	#haikei message{
-		display: inline-block;
-		width: 30%;
-		padding: 0 1.5%;
-		margin-bottom: 0;
-		vertical-align: top;
-		text-align: left;
-	}
-
-
 	/* SEC02 MESSAGE
 	-----------------
 	.txt, .bg{
@@ -585,6 +583,71 @@ article{
 		margin: 0 auto;
 		display: block;
 	max-width: 288px;
+	}
+
+	/* SEC02 BUSINESS～CAREEA
+	-----------------*/
+	#haikei{
+		width:100vw;
+		margin:0;
+		background-image: none;
+	}
+
+	#haikei h2{
+		width: auto;
+	}
+
+	.message{
+		width: auto;
+	}
+
+	.message.left,.message.right{
+		float: none;
+	}
+
+	.bbb{
+		padding:0 20px;
+
+	}
+
+	.ccc{
+		padding:0 20px;
+
+	}
+
+	/* tokyo.php/nagasaki.php
+	-----------------*/
+
+	article{
+		width:auto;
+		margin:20px 0;
+		text-align:center;
+	}
+
+	.dd{
+		padding-left: 45px;
+		text-align:left;
+	}
+
+	.icon{
+		float: none;
+		display: inline;
+	}
+
+	.date{
+	}
+
+	.title{
+	}
+
+	.text{
+	}
+
+	/* article.php
+	-----------------*/
+	#article{
+		width: auto;
+		padding: 0 20px;
 	}
 }
 
