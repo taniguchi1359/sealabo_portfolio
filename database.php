@@ -1,7 +1,7 @@
 <?php
 # 接続
-const HOST = 'localhost';# ホスト名
-const USER = 'root';# 接続ユーザー名
+const HOST = '';# ホスト名
+const USER = '';# 接続ユーザー名
 const PASS = '';# パスワード
 
 # globalで使うmysqliオブジェクト
